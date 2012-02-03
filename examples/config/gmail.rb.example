@@ -1,0 +1,18 @@
+imap.address     = "imap.gmail.com"
+imap.user        = "<<USERNAME>>@gmail.com"
+imap.password    = "<<PASSWORD>>"
+imap.ssl_enabled = true
+imap.port        = 993
+
+smtp.address           = "smtp.gmail.com"
+smtp.user              = "<<USERNAME>>@gmail.com"
+smtp.password          = "<<PASSWORD>>" 
+smtp.starttls_enabled  = true
+smtp.port              = 587
+ 
+service.domain           = "gmail.com"
+service.templates_dir    = "views"
+service.default_sender   = "<<USERNAME>>@gmail.com"
+service.polling_interval = 10
+
+application.jester_db = "data/jester.store"
