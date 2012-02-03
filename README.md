@@ -8,7 +8,7 @@ Share some stories with your friends with Jester!
 
 This is a demo application for Mendicant University's
 [Newman](http://github.com/mendicant-university/newman) microframework for
-building email-centric programs. Jester is based on work by Brent Vatne, and is
+building email-centric programs. Jester is based on work by [Brent Vatne](http://community.mendicantuniversity.org/people/brentvatne), and is
 released under the MIT License.
 
 TODO: Make this README suck less.
