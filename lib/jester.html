@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <title>jester.rb</title>
+  <link rel="stylesheet" href="http://jashkenas.github.com/docco/resources/docco.css">
+</head>
+<body>
+<div id='container'>
+  <div id="background"></div>
+  <div id="jump_to">
+    Jump To &hellip;
+    <div id="jump_wrapper">
+      <div id="jump_page">
+          <a class="source" href="jester.html">jester.rb</a>
+          <a class="source" href="jester/application.html">application.rb</a>
+          <a class="source" href="jester/story_library.html">story_library.rb</a>
+      </div>
+    </div>
+  </div>
+  <table cellspacing=0 cellpadding=0>
+  <thead>
+    <tr>
+      <th class=docs><h1>jester.rb</h1></th>
+      <th class=code></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr id='section-1'>
+      <td class=docs>
+        <div class="pilwrap">
+          <a class="pilcrow" href="#section-1">&#182;</a>
+        </div>
+        
+      </td>
+      <td class=code>
+        <div class='highlight'><pre><span class="nb">require</span> <span class="s2">&quot;bundler&quot;</span></pre></div>
+      </td>
+    </tr>
+    <tr id='section-2'>
+      <td class=docs>
+        <div class="pilwrap">
+          <a class="pilcrow" href="#section-2">&#182;</a>
+        </div>
+        <p>normally it&rsquo;s a bad idea to use Bundler as a runtime dependency, but we need
+it here because we&rsquo;re building newman from git.</p>
+
+      </td>
+      <td class=code>
+        <div class='highlight'><pre><span class="no">Bundler</span><span class="o">.</span><span class="n">require</span> 
+
+<span class="n">require_relative</span> <span class="s2">&quot;jester/story_library&quot;</span>
+<span class="n">require_relative</span> <span class="s2">&quot;jester/application&quot;</span></pre></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
