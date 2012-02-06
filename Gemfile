@@ -1,3 +1,3 @@
 source :rubygems
 
-gem "newman"
+gem "newman", :git => "git://github.com/mendicant-university/newman.git"
