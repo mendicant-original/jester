@@ -12,11 +12,11 @@
     Jump To &hellip;
     <div id="jump_wrapper">
       <div id="jump_page">
-          <a class="source" href="../examples/config/environment.html">environment.rb</a>
-          <a class="source" href="../examples/jester.html">jester.rb</a>
+          <a class="source" href="config/environment.html">environment.rb</a>
           <a class="source" href="jester.html">jester.rb</a>
-          <a class="source" href="jester/application.html">application.rb</a>
-          <a class="source" href="jester/story_library.html">story_library.rb</a>
+          <a class="source" href="../lib/jester.html">jester.rb</a>
+          <a class="source" href="../lib/jester/application.html">application.rb</a>
+          <a class="source" href="../lib/jester/story_library.html">story_library.rb</a>
       </div>
     </div>
   </div>
@@ -36,7 +36,7 @@
         
       </td>
       <td class=code>
-        <div class='highlight'><pre><span class="nb">require</span> <span class="s2">&quot;bundler&quot;</span></pre></div>
+        <div class='highlight'><pre><span class="n">require_relative</span> <span class="s2">&quot;../lib/jester&quot;</span></pre></div>
       </td>
     </tr>
     <tr id='section-2'>
@@ -44,15 +44,11 @@
         <div class="pilwrap">
           <a class="pilcrow" href="#section-2">&#182;</a>
         </div>
-        <p>normally it&rsquo;s a bad idea to use Bundler as a runtime dependency, but we need
-it here because we&rsquo;re building newman from git.</p>
+        <p>Run the app</p>
 
       </td>
       <td class=code>
-        <div class='highlight'><pre><span class="no">Bundler</span><span class="o">.</span><span class="n">require</span> 
-
-<span class="n">require_relative</span> <span class="s2">&quot;jester/story_library&quot;</span>
-<span class="n">require_relative</span> <span class="s2">&quot;jester/application&quot;</span></pre></div>
+        <div class='highlight'><pre><span class="no">Newman</span><span class="o">::</span><span class="no">Server</span><span class="o">.</span><span class="n">simple</span><span class="p">(</span><span class="no">Jester</span><span class="o">::</span><span class="no">Application</span><span class="p">,</span> <span class="s2">&quot;config/environment.rb&quot;</span><span class="p">)</span></pre></div>
       </td>
     </tr>
   </table>
