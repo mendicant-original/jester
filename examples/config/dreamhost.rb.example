@@ -1,3 +1,6 @@
+# WARNING: DO NOT HOOK THIS UP TO AN EMAIL ACCOUNT WHICH YOU CARE ABOUT
+# THE MAIL IN. JESTER *WILL* DELETE ALL OF YOUR EMAIL IF YOU DO THAT.
+
 imap.address   = "mail.<<DOMAIN>>"
 imap.user      = "<<USERNAME>>@<<DOMAIN>>"
 imap.password  = "<<PASSWORD>>"
