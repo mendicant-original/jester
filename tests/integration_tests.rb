@@ -1,4 +1,4 @@
-require './helper'
+require_relative 'helper'
 
 describe "Jester" do
   let(:server) { Newman.new_test_server(Jester::Application) }
