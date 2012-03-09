@@ -6,15 +6,19 @@ require_relative "../lib/jester"
 
 module Newman
   TEST_DIR   =  File.dirname(__FILE__) 
+  DATA_STORE =  TEST_DIR + "/jester.store"
 
   def self.new_test_server(app)
     server = Newman::Server.test_mode(TEST_DIR + "/settings.rb")
     server.apps << app
 
-    data_store = TEST_DIR + "/jester.store"
-    File.delete(data_store) if File.exist?(data_store) # Clean db before each test
-    server.settings.application.jester_db = data_store
+    server.settings.application.jester_db = DATA_STORE
 
     server
   end
+
+  MiniTest::Spec.after do
+    File.delete(DATA_STORE) if File.exist?(DATA_STORE)
+  end
 end
+
