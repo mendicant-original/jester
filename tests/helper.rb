@@ -10,8 +10,10 @@ module Newman
   def self.new_test_server(app)
     server = Newman::Server.test_mode(TEST_DIR + "/settings.rb")
     server.apps << app
-    server.settings.application.jester_db = TEST_DIR + "/jester.store"
-    server.settings.service.templates_dir = TEST_DIR + "/../examples/views"
+
+    data_store = TEST_DIR + "/jester.store"
+    File.delete(data_store) if File.exist?(data_store) # Clean db before each test
+    server.settings.application.jester_db = data_store
 
     server
   end
